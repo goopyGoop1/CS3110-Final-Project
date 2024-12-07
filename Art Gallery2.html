@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chad's Art Gallery2</title>
+  </head>
+
+  <body onload="main()">
+    <!-- Canvas for WebGL rendering -->
+    <canvas id="webgl" width="800" height="800">
+      Please use a browser that supports "canvas".
+    </canvas>
+
+    <!-- Instructions -->
+    <div class="instructions">
+      <strong>Controls:</strong><br />
+      <b>Move:</b> W (forward), S (backward), A (left), D (right)<br />
+      <b>Rotate:</b> Q (look left), E (look right), R (look up), F (look down)<br />
+      <b>Zoom:</b> - (zoom in), + (zoom out)<br />
+      <b>Reset:</b> Refresh the page<br />
+    </div>
+
+    <!-- WebGL and utility libraries -->
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <!-- Main WebGL script -->
+    <script src="Art Gallery2.js"></script>
+  </body>
+</html>
